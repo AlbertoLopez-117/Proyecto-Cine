@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/TemaCine.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/Estilo1.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" href="https://bootswatch.com/4/united/bootstrap.min.css">
+    <script src="bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/2ac9c143a3.js" crossorigin="anonymous"></script>
+    <title>BIRD RED CINEMA</title>
+</head>
+
+<header style="background-image: url(../resources/img/hed.jpg);">
+    <div class="fondo-st">
+        <br>
+        <h1 class="fuente-st">BIRD RED CINEMA</h1>
+
+        <center>
+            <input type="search" name="Buscador" placeholder="Buscar...." class="buscador">
+            <input type="button" value="Buscar" class="botonBuscar">
+            <a href="#log" class="nav-item">Login</a>
+        </center>
+    </div>
+    <nav class="menu">
+        <a href="inicio.html" class="nav-item">inicio</a>
+        <a href="../index.html" class="nav-item">Proximos estrenos</a>
+        <a href="Preventa.html" class="nav-item">Preventas</a>
+        <a href="#" class="nav-item">Tienda</a>
+        <a href="infoCine.html" class="nav-item">Acerca de nostros</a>
+
+    </nav>
+
+</header>
+
+<body style="background-image: url(../recursos/PicsArt_10-20-04.01.37.jpg);">
+    <article class="light-box" id="log">
+        <center>
+
+            <img src="../resource\img\icono_login.png" class="imagenicono" alt="Imagen no encontrada">
+            <br>
+            <br>
+            <h3 style="color: antiquewhite;">Ingresa tus datos de login</h3>
+            <br>
+            <input type="text" class="cajasTex" placeholder="Usuario"><br><br>
+            <input type="text" class="cajasTex" placeholder="Contraseña"><br><br>
+            <input type="button" value="Login" class="nav-item"> <br><br>
+            <a href="../html/Registro.html"><input type="button" value="Registrarse" class="nav-item"></a>
+            <br>
+            <br>
+            <a href="" style="color: antiquewhite;">
+                <h5>¿Olvidaste tu contraseña?</h5>
+            </a>
+            <a href=" " class="close "><i class="far fa-times-circle "></i></a>
+
+        </center>
+
+    </article>
+    <center>
+        <main>
+            <article class="fondoarticle">
+                <section>
+                    <table class="table">
+                        <tr>
+                            <th>Nombre del Producto</th>
+                            <th>Imagén del Producto</th>
+                            <th>Descripción del Producto</th>
+                            <th>precio</th>
+                            <th>Acciones</th>
+                        </tr>
+                        <tr>
+                            <td>BOLSA DE DULCES - CHICA</td>
+                            <td><img class="img1" src="../resources/img/bolsadulces.png" alt="Imagen no encontrada"></td>
+                            <td>CONTENIDO DE 100GRS</td>
+                            <td>$12.00</td>
+                            <td><button class="espacio button3 producto" precio="12" titulo="BOLSA DE DULCES CHICA">Agregar al carrito</button></td>
+                        </tr>
+                        <tr>
+                            <td>BOLSA DE DULCES - MEDIANA</td>
+                            <td><img class="img1" src="../resources/img/bolsadulces.png" alt="Imagen no encontrada"></td>
+                            <td>CONTENIDO DE 200GRS</td>
+                            <td>$17.00</td>
+                            <td><button class="espacio button3 producto" precio="17" titulo="BOLSA DE DULCES MEDIANA">Agregar al carrito</button></td>
+                        </tr>
+                        <tr>
+                            <td>BOLSA DE DULCES - GRANDE</td>
+                            <td><img class="img1" src="../resources/img/bolsadulces.png" alt="Imagen no encontrada"></td>
+                            <td>CONTENIDO DE 300GRS</td>
+                            <td>$20.00</td>
+                            <td><button class="espacio button3 producto" precio="20" titulo="BOLSA DE DULCES GRANDE">Agregar al carrito</button></td>
+                        </tr>
+                        <tr>
+                            <td>SODA COCA COLA - CHICA</td>
+                            <td><img class="img1" src="../resources/img/soda.png" alt="Imagen no encontrada"></td>
+                            <td>VASO DE 500ML</td>
+                            <td>$14.00</td>
+                            <td><button class="espacio button3 producto" precio="14" titulo="SODA COCA COLA CHICA">Agregar al carrito</button></td>
+                        </tr>
+                        <tr>
+                            <td>SODA MIRINDA - CHICA</td>
+                            <td><img class="img1" src="../resources/img/soda.png" alt="Imagen no encontrada"></td>
+                            <td>VASO DE 500ML</td>
+                            <td>$14.00</td>
+                            <td><button class="espacio button3 producto" precio="14" titulo="SODA MIRINDA CHICA">Agregar al carrito</button></td>
+                        </tr>
+                        <tr>
+                            <td>SODA MANZANITA - CHICA</td>
+                            <td><img class="img1" src="../resources/img/soda.png" alt="Imagen no encontrada"></td>
+                            <td>VASO DE 500ML</td>
+                            <td>$14.00</td>
+                            <td><button class="espacio button3 producto" precio="14" titulo="SODA MANZANITA CHICA">Agregar al carrito</button></td>
+                        </tr>
+                        <tr>
+                            <td>SODA COCA COLA - MEDIANA</td>
+                            <td><img class="img1" src="../resources/img/soda.png" alt="Imagen no encontrada"></td>
+                            <td>VASO DE 700ML</td>
+                            <td>$17.00</td>
+                            <td><button class="espacio button3 producto" precio="17" titulo="SODA COCA COLA MEDIANA">Agregar al carrito</button></td>
+                        </tr>
+                        <tr>
+                            <td>SODA MIRINDA - MEDIANA</td>
+                            <td><img class="img1" src="../resources/img/soda.png" alt="Imagen no encontrada"></td>
+                            <td>VASO DE 700ML</td>
+                            <td>$17.00</td>
+                            <td><button class="espacio button3 producto" precio="17" titulo="SODA MIRINDA MEDIANA">Agregar al carrito</button></td>
+                        </tr>
+                        <tr>
+                            <td>SODA MANZANITA - MEDIANA</td>
+                            <td><img class="img1" src="../resources/img/soda.png" alt="Imagen no encontrada"></td>
+                            <td>VASO DE 700ML</td>
+                            <td>$17.00</td>
+                            <td><button class="espacio button3 producto" precio="17" titulo="SODA MANZANITA MEDIANA">Agregar al carrito</button></td>
+                        </tr>
+                        <tr>
+                            <td>SODA COCA COLA - GRANDE</td>
+                            <td><img class="img1" src="../resources/img/soda.png" alt="Imagen no encontrada"></td>
+                            <td>VASO DE 1LT</td>
+                            <td>$20.00</td>
+                            <td><button class="espacio button3 producto" precio="20" titulo="SODA COCA COLA GRANDE">Agregar al carrito</button></td>
+                        </tr>
+                        <tr>
+                            <td>SODA MIRINDA - GRANDE</td>
+                            <td><img class="img1" src="../resources/img/soda.png" alt="Imagen no encontrada"></td>
+                            <td>VASO DE 1LT</td>
+                            <td>$20.00</td>
+                            <td><button class="espacio button3 producto" precio="20" titulo="SODA MIRINDA GRANDE">Agregar al carrito</button></td>
+                        </tr>
+                        <tr>
+                            <td>SODA MANZANITA - GRANDE</td>
+                            <td><img class="img1" src="../resources/img/soda.png" alt="Imagen no encontrada"></td>
+                            <td>VASO DE 1LT</td>
+                            <td>$20.00</td>
+                            <td><button class="espacio button3 producto" precio="20" titulo="SODA MANZANITA GRANDE">Agregar al carrito</button></td>
+                        </tr>
+                        <tr>
+                            <td>NACHOS - TRADICIONALES</td>
+                            <td><img class="img1" src="../resources/img/nachos.png" alt="Imagen no encontrada"></td>
+                            <td>PLATO ONDO DE 200GR, CON QUESO FUNDIDO</td>
+                            <td>$20.00</td>
+                            <td><button class="espacio button3 producto" precio="20" titulo="Nachos Tradiconales">Agregar al carrito</button></td>
+                        </tr>
+                        <tr>
+                            <td>NACHOS - ITALIANOS</td>
+                            <td><img class="img1" src="../resources/img/nachos.png" alt="Imagen no encontrada"></td>
+                            <td>PLATO ONDO DE 200GR, CON PEPERONI Y QUESO FUNDIDO</td>
+                            <td>$25.00</td>
+                            <td><button class="espacio button3 producto" precio="25" titulo="Nachos Italianos">Agregar al carrito</button></td>
+                        </tr>
+                        <tr>
+                            <td>NACHOS - MEXICANO</td>
+                            <td><img class="img1" src="../resources/img/nachos.png" alt="Imagen no encontrada"></td>
+                            <td>PLATO ONDO DE 200GR, CON CARNE ADOBADA Y QUESO FUNDIDO</td>
+                            <td>$25.00</td>
+                            <td><button class="espacio button3 producto" precio="25" titulo="Nachos Mexicanos">Agregar al carrito</button></td>
+                        </tr>
+                        <tr>
+                            <td>PALOMITAS - CHICAS</td>
+                            <td><img class="img1" src="../resources/img/palomit.png" alt="Imagen no encontrada"></td>
+                            <td>BOLSA DE UN CONTENIDO DE 200GR</td>
+                            <td>$15.00</td>
+                            <td><button class="espacio button3 producto" precio="15" titulo="Palomitas Chicas">Agregar al carrito</button></td>
+                        </tr>
+                        <tr>
+                            <td>PALOMITAS - GRANDES</td>
+                            <td><img class="img1" src="../resources/img/palomit.png" alt="Imagen no encontrada"></td>
+                            <td>BOLSA DE UN CONTENIDO DE 350GR</td>
+                            <td>$20.00</td>
+                            <td><button class="espacio button3 producto" precio="20" titulo="Palomitas Grandes">Agregar al carrito</button></td>
+                        </tr>
+                        <tr>
+                            <td>PALOMITAS - SUPER GIGANTES</td>
+                            <td><img class="img1" src="../resources/img/palomit.png" alt="Imagen no encontrada"></td>
+                            <td>BOLSA DE UN CONTENIDO DE 500GR</td>
+                            <td>$25.00</td>
+                            <td><button class="espacio button3 producto" precio="25" titulo="Palomitas - Super Gigantes">Agregar al carrito</button></td>
+                        </tr>
+                        <tr>
+                            <td>HELADO - NAPOLITANO</td>
+                            <td><img class="img1" src="../resources/img/helado.png" alt="Imagen no encontrada"></td>
+                            <td>CONO DE HELADO SABOR NAPOLITANO, CON DOS BOLITAS DE NIEVE Y CHISPAS DE CHOCOLATE</td>
+                            <td>$23.00</td>
+                            <td><button class="espacio button3">Agregar al carrito</button></td>
+                        </tr>
+                        <tr>
+                            <td>HELADO - OREO</td>
+                            <td><img class="img1" src="../resources/img/helado.png" alt="Imagen no encontrada"></td>
+                            <td>CONO DE HELADO SABOR GALLETAS OREO, CON DOS BOLITAS DE NIEVE Y CHISPAS DE CHOCOLATE</td>
+                            <td>$23.00</td>
+                            <td><button class="espacio button3 producto" precio="23" titulo="HELADO - OREO">Agregar al carrito</button></td>
+                        </tr>
+                        <tr>
+                            <td>HELADO - VAINILLA</td>
+                            <td><img class="img1" src="../resources/img/helado.png" alt="Imagen no encontrada"></td>
+                            <td>CONO DE HELADO SABOR VAINILLA, CON DOS BOLITAS DE NIEVE Y CHISPAS DE CHOCOLATE</td>
+                            <td>$23.00</td>
+                            <td><button class="espacio button3 producto" precio="23" titulo="HELADO - VAINILLA">Agregar al carrito</button></td>
+                        </tr>
+                        <tr>
+                            <td>HOT DOG</td>
+                            <td><img class="img1" src="../resources/img/hotdog.png" alt="Imagen no encontrada"></td>
+                            <td>CRUJIENTE, Y COMIDA DE MUY BUENA MARCA</td>
+                            <td>$24.00</td>
+                            <td><button class="espacio button3 producto" precio="24" titulo="HOT DOG" onclick="añadirCarro()">Agregar al carrito</button></td>
+                        </tr>
+                    </table>
+
+                    <script src="../js/minicart.js"></script>
+                    <script>
+                        // configuración inicial del carrito 
+                        paypal.minicart.render({
+                            strings: {
+                                button: 'Pagar y llevar a asiento',
+                                buttonAlt: "Total",
+                                subtotal: 'Total:',
+                                empty: 'No hay productos en el carrito'
+                            }
+                        });
+                        // Eventos para agregar productos al carrito
+
+                        $('.producto').click(function(e) {
+                            e.stopPropagation();
+                            paypal.minicart.cart.add({
+                                business: 'spartan_unsc_@hotmail.com', // Cuenta paypal para recibir el dinero
+                                item_name: $(this).attr("titulo"),
+                                amount: $(this).attr("precio"),
+                                currency_code: 'MXN',
+
+                            });
+                        });
+                    </script>
+                </section>
+            </article>
+        </main>
+    </center>
+
+</body>
+<footer style="background-image: url(../resources/img/hed.jpg);">
+    <center>
+        <br>
+
+        <table>
+            <tr>
+                <th>CARTELERA</th>
+                <th>¿QUIENES SOMOS</th>
+                <th>LEGAL</th>
+            </tr>
+            <tr>
+                <td>
+                    <a href="inicio.html" class="link">Cartelera</a><br>
+                    <a href="ticket.html" class="link"> Preventa</a><br>
+                    <a href="../index.html" class="link"> Prosimos estrenos</a><br>
+                </td>
+                <td>
+                    <a href="infoCine.html" class="link">Caracteristicas</a>
+                </td>
+                <td>
+                    <a href="../resources/docs/Políticas de Privacidad Bir Red Cinema.pdf" class="link">Terminos y conciciones</a>
+                </td>
+            </tr>
+
+
+        </table>
+        <br><br>
+
+        <img src="../resources/img footer/comerce.png" alt="" class="img">
+        <img src="../resources/img footer/ESR.png" alt="" class="img">
+        <img src="../resources/img footer/super empresas.png" alt="" class="img">
+        <img src="../resources/img footer/coca-cola.jpg" alt="" class="img">
+        <img src="../resources/Logo/Untitled.png" alt="" class="img">
+
+
+
+    </center>
+
+</footer>
+
+</html>

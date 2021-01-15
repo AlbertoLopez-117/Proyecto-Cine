@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/TemaCine.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/imagenCarrusel.css">
+
+
+    <script src="https://kit.fontawesome.com/2ac9c143a3.js" crossorigin="anonymous"></script>
+    <title>BIRD RED CINEMA</title>
+
+</head>
+
+<header class="navbar navbar-dark bg-dark">
+    <div class="fondo-st">
+        <br>
+        <h1 class="fuente-st">BIRD RED CINEMA</h1>
+
+    </div>
+
+
+
+</header>
+
+<body class="bg-danger">
+    <nav class="navbar navbar-black bg-danger">
+
+        <!--<a class="navbar-brand">BIRD RED CINEMA</a>-->
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" href="html/inicio.html" style="color: white;">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="html/Preventa.html" style="color: white;">Proximos Estrenos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="html/ticket.html" style="color: white;">Preventas</a>
+            </li>
+            <li class="nav-item">
+                <a id="Promo" class="nav-item textodivcar">Tienda</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="html/infoCine.html" style="color: white;">Acerca de Nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#log" style="color: white;">Login</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-danger my-2 my-sm-0" type="submit" style="color: white;">Search</button>
+        </form>
+
+    </nav>
+    <div id="Peliculas" class="textodivcar">
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" id="carrusel">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://dailysuperheroes.com/wp-content/uploads/2018/04/004.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block textoCarrucel">
+                        <h2>Venom</h2>
+                        <!--<a id="Detalles" href="html/Tienda.html" class="nav-item">Detalles</a>-->
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://s3-eu-west-1.amazonaws.com/kneelbeforeblog/wp-content/uploads/2019/04/25033528/AvengersEG2D_banner-Cropped-920x307.jpg" alt="Second slide" class="imagencar">
+                    <div class="carousel-caption d-none d-md-block textoCarrucel">
+                        <h2>Avengers End Game</h2>
+                        <!--<a id="Detalles" href="html/Tienda.html" class="nav-item">Detalles</a>-->
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://cartelescine.files.wordpress.com/2019/11/bobesponjabanner.jpg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block textoCarrucel">
+                        <h2>Bob Esponja Un Heroe al Rescate</h2>
+                        <!--<a id="Detalles" href="html/Tienda.html" class="nav-item">Detalles</a>-->
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <br>
+    <aside style="background-image: url(resources/img/fondo-aside-prueba.jpg);" class="aside">
+
+        <select name="lugar" id="lugar" class="buscador1">
+            <option value="">"selecionar un lugar"</option>
+            <option value="">Ciudad Hidalgo</option>
+            <option value="">Zitacuaro</option>
+            <option value="">Maravatio</option>
+        </select>
+        <br>
+        <input type="button" value="Buscar" class="botonBuscar" class="navbar navbar-black bg-danger">
+        <br>
+        <br>
+        <center>
+            <label>SIGUENOS EN</label>
+            <br>
+            <i style="color:  rgba(164, 1, 1, 1);" class="fab fa-facebook-square "></i>
+            <br>
+            <i style="color:  rgba(164, 1, 1, 1);" class="fab fa-twitter-square"></i>
+            <br>
+            <i style="color:  rgba(164, 1, 1, 1);" class="fab fa-instagram-square"></i>
+            <br>
+            <i style="color:  rgba(164, 1, 1, 1);" class="fab fa-youtube-square"></i>
+            <br>
+        </center>
+
+    </aside>
+
+    <aside class="aside-vaner">
+        <img src="resources/img/PDCT.jpg" alt="Imagen no encontrada"><br>
+        <img src="resources/img/final.png" height="auto" width="auto" alt="Imagen no encontrada" class="vaner">
+        <center>
+            <h3>BOLETOS <br>A LA VENTA</h3>
+        </center>
+    </aside>
+
+    <center>
+        <section class="galeria">
+
+            <a href="#img1">
+                <img src="resources/accion/pirates-of-the-caribbean-dead-men-tell-no-tales.jpg" alt="">
+
+            </a>
+            <a href="#img2">
+                <img src="resources/Drama/Me before you.jpg" alt="">
+            </a>
+            <a href="#img3">
+                <img src="resources/Peliculas aventura/mulan.jpg" alt="">
+            </a>
+            <a href="#img4">
+                <img src="resources/img/Sonic_la_pel_cula-450124674-large.jpg" alt="">
+            </a>
+            <a href="#img5">
+                <img src="resources/animacion/BobEsponja.jpg" alt="">
+            </a>
+            <a href="#img6">
+                <img src="resources/Portadas Terror/Baba Yaga.jpg" alt="">
+            </a>
+
+        </section>
+    </center>
+
+    <article class="light-box" id="img1">
+        <a href="#img6" class="back"><i class="far fa-arrow-alt-circle-left"></i></a>
+        <section class="info_conte">
+            <img src="resources/accion/pirates-of-the-caribbean-dead-men-tell-no-tales.jpg" alt="">
+            <p>
+                Piratas del Caribe: La venganza de Salazar<br> Año : 2017<br> Géneros: Acción | Aventura | Fantasía<br> Director: Joachim Rønning<br> Sinopsis : El temible capitán Salazar consiguió escapar del Triángulo del Diablo con la determinación
+                de acabar con el capitán Jack Sparrow. Ahora Jack debe buscar el tridente de Poseidón mientras es cazado por un capitán no muerto y su tripulación. Serie Piratas del Caribe
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Hgeu5rhoxxY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </section>
+
+
+        <a href="#img2" class="next "><i class="far fa-arrow-alt-circle-right "></i></a>
+        <a href=" " class="close "><i class="far fa-times-circle "></i></a>
+
+    </article>
+
+    <article class="light-box" id="img2">
+        <a href="#img1" class="back"><i class="far fa-arrow-alt-circle-left"></i></a>
+        <section class="info_conte">
+            <img src="resources/Drama/Me before you.jpg" alt="">
+            <p>
+                Yo antes de ti<br> Año : 2016 <br> Gerenro : Drama/Romance<br> Director : Thea Sharrock<br> Sinopsis : La vida de Louisa Clark, una chica alegre y alocada, que va empalmando un trabajo con otro para ayudar a su familia a subsistir, cambia
+                por completo cuando comienza a trabajar como cuidadora de un joven millonario, quien quedó paralítico tras un accidente. Poco a poco, se va estableciendo entre ellos una conexión cada vez más íntima.
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/J-lcPRmI6jY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        <a href="#img3" class="next "><i class="far fa-arrow-alt-circle-right "></i></a>
+        <a href=" " class="close "><i class="far fa-times-circle "></i></a>
+
+    </article>
+
+    <article class="light-box" id="img3">
+        <a href="#img2" class="back"><i class="far fa-arrow-alt-circle-left"></i></a>
+        <section class="info_conte">
+            <img src="resources/Peliculas aventura/mulan.jpg" alt="">
+            <p>
+                Mulán <br> Año : 2020<br> Género : Aventura<br> Director : Niki Caro<br> Sinopsis : China, época de la dinastía Han. Mulan es una joven hermosa, fuerte y valiente, hija de un respetable veterano de guerra. La joven siempre se mete en líos
+                por no ser exactamente una dama sofisticada y, de hecho, no le ha dado muy buena impresión a la casamentera, que evalúa a las jóvenes como potenciales novias.
+
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KK8FHdFluOQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        <a href="#img4" class="next "><i class="far fa-arrow-alt-circle-right "></i></a>
+        <a href=" " class="close "><i class="far fa-times-circle "></i></a>
+
+    </article>
+
+    <article class="light-box" id="img4">
+        <a href="#img3" class="back"><i class="far fa-arrow-alt-circle-left"></i></a>
+        <section class="info_conte">
+            <img src="resources/img/Sonic_la_pel_cula-450124674-large.jpg" alt="">
+            <p>
+                Sonic la película<br> Año: 2020<br> Genero: Ciencia Ficcion<br> Director: Jeff Fowler<br> Sinopsis: Sonic intenta atravesar las complejidades de la vida en la Tierra con su nuevo mejor amigo, un humano llamado Tom Wachowski. Deberán unir
+                sus fuerzas para evitar que el malvado Dr. Robotnik capture a Sonic y use sus poderes para dominar el mundo.
+
+            </p>
+            <iframe width="400" height="200" src="https://www.youtube.com/embed/Xb3E8eWZ1mk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </section>
+
+        <a href="#img5" class="next "><i class="far fa-arrow-alt-circle-right "></i></a>
+        <a href=" " class="close "><i class="far fa-times-circle "></i></a>
+
+    </article>
+
+    <article class="light-box" id="img5">
+        <a href="#img4" class="back"><i class="far fa-arrow-alt-circle-left"></i></a>
+        <section class="info_conte">
+            <img src="resources/animacion/BobEsponja.jpg" alt="">
+            <p>
+                Bob Esponja al Rescate<br> Año : 2020<br> Genero : Animacion<br> Estudio de Animación: Nickelodeon<br> Sinopsis :  Bob Esponja y su íntimo amigo Patricio Estrellas tienen que encontrar a su nuevo amigo Gary, un caracol rosa. Sin duda otra
+                aventura con la que los más pequeños, y los no tanto, disfrutarán de nuevo como enanos.
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/p6BNtDyKQzg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        <a href="#img6" class="next "><i class="far fa-arrow-alt-circle-right "></i></a>
+        <a href=" " class="close "><i class="far fa-times-circle "></i></a>
+
+    </article>
+
+    <article class="light-box" id="img6">
+        <a href="#img5" class="back"><i class="far fa-arrow-alt-circle-left"></i></a>
+        <section class="info_conte">
+            <img src="resources/Portadas Terror/Baba Yaga.jpg" alt="">
+
+            <p>
+                Baba yaga<br> Año : 2020<br> Genero : Terror<br> Director : Svyatoslav Podgaevsky <br> Sinopsis : Una joven familia se muda a un nuevo departamento a las orillas de la ciudad. Como los padres tienen una bebé recién nacida, contratan una
+                niñera que rápidamente gana la confianza de los adultos. El hijo mayor descubre un comportamiento sospechoso en la nueva cuidadora y situaciones sobrenaturales alrededor de la bebé, pero sus padres no le creen ya que tienen cámaras de
+                vigilancia instaladas que comprueban que nada raro ocurre.
+            </p>
+
+            <iframe width="460" height="215" src=" https://www.youtube.com/embed/xoA7dTEIrmw " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+
+        </section>
+
+        <a href="#img1" class="next "><i class="far fa-arrow-alt-circle-right "></i></a>
+        <a href=" " class="close "><i class="far fa-times-circle "></i></a>
+
+    </article>
+    <article class="light-box" id="log">
+        <center>
+
+            <img src="resource\img\icono_login.png" class="imagenicono" alt="Imagen no encontrada">
+            <br>
+            <br>
+            <h3 style="color: antiquewhite;">Ingresa tus datos de login</h3>
+            <br>
+            <input type="text" class="cajasTex" placeholder="Usuario"><br><br>
+            <input type="text" class="cajasTex" placeholder="Contraseña"><br><br>
+            <input type="button" value="Login" class="nav-item"> <br><br>
+            <a href="html/Registro.html"><input type="button" value="Registrarse" class="nav-item"></a>
+            <br>
+            <br>
+            <a href="" style="color: antiquewhite;">
+                <h5>¿Olvidaste tu contraseña?</h5>
+            </a>
+            <a href=" " class="close "><i class="far fa-times-circle "></i></a>
+
+        </center>
+
+    </article>
+    <div id="Promocion" class="textodivcar">
+        <h2>Promociones en la Tienda</h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" id="carrusel">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="resources/img/palomitas.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block textoCarrucel">
+                        <h2>Compra tus palomitas de varios sabores</h2>
+                        <a id="Detalles" href="html/Tienda.html" class="nav-item">Detalles</a>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="resources/img/refresco.jpg" alt="Second slide" class="imagencar">
+                    <div class="carousel-caption d-none d-md-block textoCarrucel">
+                        <h2>Encuentra tus bebidad Favoritas!!</h2>
+                        <a href="html/Tienda.html" class="nav-item">Detalles</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="resources/img/combos.jpg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block textoCarrucel">
+                        <h2>Combo 2x1 Aprovecha!!</h2>
+                        <a href="html/Tienda.html" class="nav-item">Detalles</a>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="../Cinefinal/js/Despliegue.js"></script>
+
+</body>
+<footer style="background-image: url(resources/img/hed.jpg);">
+    <center>
+        <br>
+
+        <table>
+            <tr>
+                <th>CARTELERA</th>
+                <th>¿QUIENES SOMOS</th>
+                <th>LEGAL</th>
+            </tr>
+            <tr>
+                <td>
+                    <a href="html/inicio.html" class="link">Cartelera</a><br>
+                    <a href="html/ticket.html" class="link"> Preventa</a><br>
+                    <a href="index.html" class="link"> Proximos estrenos</a><br>
+                </td>
+                <td>
+                    <a href="html/infoCine.html" class="link">Caracteristicas</a>
+                </td>
+                <td>
+                    <a href="resources/docs/Políticas de Privacidad Bir Red Cinema.pdf" class="link">Terminos y conciciones</a>
+                </td>
+            </tr>
+
+
+        </table>
+        <br><br>
+        <img src="resources/img footer/paypal.png" alt="" class="img">
+        <img src="resources/img footer/comerce.png" alt="" class="img">
+        <img src="resources/img footer/ESR.png" alt="" class="img">
+        <img src="resources/img footer/super empresas.png" alt="" class="img">
+        <img src="resources/img footer/coca-cola.jpg" alt="" class="img">
+        <img src="resources/Logo/Untitled.png" alt="" class="img">
+
+
+
+    </center>
+
+</footer>
+
+</html>r>
+
+</html>

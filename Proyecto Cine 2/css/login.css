@@ -1,0 +1,84 @@
+.nav>li {
+    float: inline-start;
+}
+
+.nav li a {
+    background-color: #da3541;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 105%;
+    border-radius: 20px;
+    transition: 500ms;
+    padding-left: 10px;
+    padding-right: 45px;
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    background-color: #434343;
+    font-size: 1.5em;
+}
+
+.nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 440px;
+}
+
+.nav li:hover>ul {
+    display: inline;
+}
+
+.nav li ul li {
+    position: relative;
+}
+
+.nav li ul li ul {
+    right: -960px;
+    top: 0px;
+}
+
+
+/*Para el boton de buscar le damos un color para el texto del boton, el tamaño de la letra, asignamos bordes redondos y le damos color al texto*/
+
+.menu1 {
+    border-radius: 20px;
+    border-style: ridge;
+    height: 120%;
+}
+
+.sectionlogin {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 120%;
+    background-color: #949494;
+    border-radius: 35px;
+    border-style: dotted;
+    border: 12%;
+}
+
+.imagenicono {
+    width: 20%;
+}
+
+.cajasTex {
+    border-radius: 30px;
+    width: 70%;
+    height: 12px;
+}
+
+.botonLogin {
+    background-color: #da3541;
+    font-size: 120%;
+    border-radius: 30px;
+    width: 50%;
+}
+
+.botonLogin:hover {
+    color: white;
+    font-size: 25px;
+    transition: 500ms;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+}

@@ -1,0 +1,316 @@
+        /*Estilo del header*/
+        
+        .fondo-st {
+            transition: 500ms;
+            height: auto;
+        }
+        
+        .fuente-st {
+            font-size: 50px;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            -webkit-text-stroke-width: 2px;
+            -moz-text-stroke-width: 2px;
+            -webkit-text-stroke-color: silver;
+            -moz-text-stroke-color: #c0c0c0;
+            transition: 3s;
+            letter-spacing: 0px;
+        }
+        
+        .fuente-st:hover {
+            font-size: 50PX;
+            letter-spacing: 40px;
+        }
+        
+        .fuente-st {
+            font-size: 50px;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            -webkit-text-stroke-width: 2px;
+            -moz-text-stroke-width: 2px;
+            -webkit-text-stroke-color: silver;
+            -moz-text-stroke-color: #c0c0c0;
+        }
+        /*Le damos un color de fondo a la pagina web*/
+        
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: large;
+            /*background: -webkit-radial-gradient(circle, rgba(164, 1, 1, 1) 75%, rgba(57, 22, 22, 1) 100%);*/
+            align-items: center;
+        }
+        /*Para el buscador le damos un tipo de fuente, el tañamo del buscador le damos borders redondos y centramos el texto del buscador */
+        
+        .buscador {
+            font-family: cursive;
+            width: 20%;
+            height: auto;
+            border-radius: 10px;
+            background-color: silver;
+            /*text-align: center;*/
+            transition: 500ms;
+        }
+        
+        .buscador:hover {
+            background-color: silver;
+            font-size: 35px;
+            border-radius: 30px;
+        }
+        
+        .buscador1 {
+            font-family: cursive;
+            font-size: 20px;
+            width: 150px;
+            height: 30px;
+            border-radius: 10px;
+            background-color: silver;
+            /*text-align: center;*/
+            transition: 500ms;
+        }
+        
+        .buscador2 {
+            font-family: cursive;
+            font-size: 20px;
+            width: 250px;
+            height: 30px;
+            border-radius: 10px;
+            background-color: silver;
+            /*text-align: center;*/
+            transition: 500ms;
+        }
+        /*Para el boton de buscar le damos un color para el texto del boton, el tamaño de la letra, asignamos bordes redondos y le damos color al texto*/
+        
+        .botonBuscar {
+            /*color: white;*/
+            color: silver;
+            font-size: 80%;
+            border-radius: 40px;
+            width: auto;
+            /*background-color: #cd8613;*/
+            background: -webkit-radial-gradient(circle, rgba(164, 1, 1, 1) 75%, rgba(57, 22, 22, 1) 100%);
+            transition: 500ms;
+            cursor: pointer;
+            text-align: center;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        
+        .botonBuscar1 {
+            /*color: white;*/
+            color: silver;
+            font-size: 80%;
+            border-radius: 40px;
+            width: auto;
+            /*background-color: #cd8613;*/
+            background: -webkit-radial-gradient(circle, rgba(164, 1, 1, 1) 75%, rgba(57, 22, 22, 1) 100%);
+            transition: 500ms;
+            cursor: pointer;
+            text-align: center;
+            padding-left: 20px;
+            padding-right: 20px;
+            height: 50px;
+            width: 150px;
+        }
+        
+        .botonBuscar:hover {
+            background-color: silver;
+            color: -webkit-radial-gradient(circle, rgba(164, 1, 1, 1) 75%, rgba(57, 22, 22, 1) 100%);
+            font-size: 35px;
+            border-radius: 30px;
+        }
+        /*Aqui le damos color, fuente de texto, color de texto, tamaño de texto, borders, separacion y sin decoracion a los botones del menu*/
+        
+        .nav-item {
+            /*background: -webkit-radial-gradient(circle, rgba(164, 1, 1, 1) 75%, rgba(57, 22, 22, 1) 100%);*/
+            color: silver;
+            font-size: 18px;
+            border-radius: 10px;
+            transition: 500ms;
+            padding-left: 30px;
+            padding-right: 10px;
+        }
+        
+        .nav-item:hover {
+            background-color: silver;
+            color: -webkit-radial-gradient(circle, rgba(164, 1, 1, 1) 75%, rgba(57, 22, 22, 1) 100%);
+            font-size: 25px;
+            border-radius: 30px;
+        }
+        
+        .menu {
+            text-align: center;
+            padding: 10px;
+        }
+        /*Clase qie da fromato al aside del lado derecho*/
+        
+        .aside {
+            font-family: cursive;
+            color: white;
+            padding: 100px;
+            border: 90px;
+            float: right;
+            height: 200%;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+        /*aside que da formato a la parte en donde va el vaner*/
+        
+        .aside-vaner {
+            font-family: cursive;
+            color: white;
+            border: 90px;
+            float: left;
+            height: 300px;
+            width: auto;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+        /*clase que le da formato a la imagen(vaner)*/
+        
+        .vaner {
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+        /*hace que la imagen del baner gire en modo espejo*/
+        
+        .vaner:hover {
+            transform: scaleX(-1);
+        }
+        /*Le damos formato al titulo de la etiqueta article*/
+        
+        .tituloArticle {
+            text-align: center;
+            font-size: 200%;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        article {
+            width: 72%;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+        /*Le damos bordes redondos y un estilo de borde a una imagen*/
+        
+        .imagen {
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            border-style: double;
+            width: 460;
+            height: 500px;
+        }
+        /*Se tienen dos colores para texto ya dependiendo cual quiera uno usar si el primario o secundario*/
+        
+        .textoPrimario {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+            font-size: 100%;
+            text-align: justify;
+        }
+        
+        .textoSecundario {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: black;
+            font-size: 100%;
+        }
+        /*Damos Varios colores para cada situacion que se presente*/
+        
+        .colorPrimario {
+            background-color: #67e77c;
+        }
+        
+        .colorSecundario {
+            background-color: #64c2df;
+        }
+        
+        .colorTerciario {
+            background-color: #9460cb;
+        }
+        
+        .colorInfo {
+            background-color: #59565c;
+        }
+        
+        .colorExito {
+            background-color: #2ee950;
+        }
+        
+        .colorPeligro {
+            background-color: #ff0909;
+        }
+        
+        .colorAdvertencia {
+            background-color: #e3f40d;
+        }
+        /*Le damos cierto formato a los botones que pueden haber en un article o section u otra etiqueta que lo requeriera*/
+        
+        .button {
+            text-align: center;
+            border-style: double;
+            background-color: #4a48d7;
+            font-size: 140%;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        /*Al boton le damos un efecto de sombra*/
+        
+        .button:hover {
+            box-shadow: 5px 5px 10p silver;
+        }
+        /*Le damos un formato a una caja de texto*/
+        
+        .text {
+            padding: 5%;
+            width: 50%;
+            font-size: 1em;
+            border-style: double;
+            border-radius: 12px;
+            text-align: left;
+        }
+        /*Le damos tambien un formato a la etiqueta footer como es bordes redondos, estilo de borde, tamaño de la letra, color al footer y alineamos el texto*/
+        
+        footer {
+            text-decoration: none;
+            color: whitesmoke;
+            text-align: center;
+        }
+        
+        .img {
+            width: 70px;
+            height: 70px;
+        }
+        
+        .radioButton {
+            font-size: 150%;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        .link {
+            text-decoration: none;
+            color: whitesmoke;
+            font-style: italic;
+            font-size: small;
+        }
+        
+        .link:hover {
+            text-decoration: none;
+            color: rgb(8, 239, 255);
+            font-style: italic;
+            font-size: small;
+        }
+        
+        table {
+            text-align: center;
+            border: transparent;
+        }

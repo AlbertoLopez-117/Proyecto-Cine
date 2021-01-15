@@ -1,0 +1,91 @@
+body {
+    font-family: Fugaz One;
+}
+
+.imgicon {
+    width: 100px;
+    height: 100px;
+    padding: 7px;
+    margin: 7px;
+    float: left;
+}
+
+.carrito {
+    float: right;
+    position: relative;
+    padding: 5px;
+    border-radius: 15px;
+    -webkit-box-shadow: 1px 1px 113px -25px rgba(0, 0, 0, 0.75);
+}
+
+.carritoimg {
+    height: 94px;
+    width: 94px;
+    padding: 0.2em;
+}
+
+button {
+    border-radius: 15px;
+    background-color: #ff7373;
+    font-family: Fugaz One;
+}
+
+.fondoarticle {
+    height: auto;
+    margin-top: 5px;
+    border-radius: 15px;
+}
+
+h2 {
+    color: white;
+    font-family: Fugaz One;
+    text-indent: 1em;
+}
+
+.button3 {
+    background-color: #ff7373;
+    color: black;
+    border: 2px solid black;
+    box-shadow: 5px black dashed;
+}
+
+.button3:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+.img1 {
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    margin: 5px;
+    float: center;
+}
+
+.table {
+    width: 500px;
+    font: normal 13px Bahnschrift;
+    text-align: center;
+    border-collapse: collapse;
+    width: 1290px;
+    margin: 13px;
+    border: 3px solid white;
+}
+
+.table th {
+    font: bold 14px Bahnschrift;
+    background-color: black;
+    border: 3px solid white;
+    height: 25px;
+    width: 15px;
+    color: white;
+}
+
+.table td {
+    font: bold 13px Bahnschrift;
+    background-color: darkred;
+    border: 3px solid white;
+    height: 25px;
+    width: 15px;
+    color: white;
+}
