@@ -42,6 +42,17 @@ require_once("BaseDatos.php");
   
   <button type="submit" class="btn btn-dark">Iniciar sesion</button>
 </form>
+<?php
+if (isset($_GET["res"]) && $_GET["res"]==1) {
+    echo ('<div class="form-group"> <div class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Registrado correctamente!</strong>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  </div>');
+}
+?>
 </center>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -66,7 +77,7 @@ require_once("BaseDatos.php");
                     <a href="index.html" class="link"> Proximos estrenos</a><br>
                 </td>
                 <td>
-                    <a href="html/infoCine.html" class="link">Caracteristicas</a>
+                    <a href="signin.php" class="link">Registrarse</a>
                 </td>
                 <td>
                     <a href="resources/docs/Políticas de Privacidad Bir Red Cinema.pdf" class="link">Terminos y conciciones</a>

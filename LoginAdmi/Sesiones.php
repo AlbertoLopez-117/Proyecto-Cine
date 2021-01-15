@@ -5,7 +5,7 @@ $pass=$_POST['password'];
 session_start();
 $_SESSION['usuario']=$usu;
 
-$conexion=mysqli_connect("localhost","Alberto","Albertolopez117","cine");
+$conexion = mysqli_connect("localhost","root","","cine");
 
 $consulta="SELECT * from usuario where correo = '$usu' and password = '$pass'";
 $resultado = mysqli_query($conexion, $consulta);
