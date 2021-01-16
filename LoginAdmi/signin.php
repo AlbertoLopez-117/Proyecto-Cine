@@ -55,7 +55,11 @@
             </div>
             <div class="form-group">
                 <label for="inputInicio" style="color: white;">Fecha de nacimiento</label>
-                <input type="date" class="form-control" name="fnacimiento" required>
+                <input type="date" class="form-control" name="fnacimiento"
+                 max=<?php $hoy=date("Y-m-d"); $nuevafecha = 
+                 strtotime ('-12 year' , strtotime($hoy)); $nuevafecha = date ('Y-m-d',$nuevafecha); echo $nuevafecha;?>
+                  min=<?php $hoy=date("Y-m-d"); $nuevafecha = strtotime ('-90 year' , strtotime($hoy)); $nuevafecha 
+                  = date ('Y-m-d',$nuevafecha); echo $nuevafecha;?>>
             </div>
             <div class="form-group">
                 <label for="inputSalida" style="color: white;">Celular</label>

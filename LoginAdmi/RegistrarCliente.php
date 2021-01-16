@@ -10,7 +10,7 @@ if (isset($_POST['register'])) {
     $email = $_POST['email'];
     $password = $_POST['password'];
     $Direccion = $_POST['Direccion'];
-    $fnacimiento =  date("YYYY/MM/DD", strtotime($_POST['fnacimiento']));
+    $fnacimiento =  date("Y/m/d", strtotime($_POST['fnacimiento']));
     $numero = $_POST['numero'];
     $password_hash = password_hash($password, PASSWORD_BCRYPT);
  
