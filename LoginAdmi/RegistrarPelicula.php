@@ -8,8 +8,8 @@ if (isset($_POST['register'])) {
     $Director = $_POST['Director'];
     $Sinopsis = $_POST['sinopsis'];
     $Duracion = $_POST['duracion'];
+    $genero = $_POST['genero'];
     $estreno =  date("Y/m/d", strtotime($_POST['estreno']));
-    echo($estreno);
     $inicio = $_POST['inicio'];
     $salida = $_POST['salida'];
     $poster = $_POST['poster'];
@@ -31,13 +31,14 @@ if (isset($_POST['register'])) {
  
     if ($query->rowCount() == 0) {
         $query = $connection->prepare("INSERT INTO `peliculas` (`titulo`, `director`, `sinopsis`
-        , `duracion`, `fechaEstreno`, `fechaCartele`, `Fechafincartelera`, `URLposter`, `URLtrailer`
+        , `duracion`,`genero`, `fechaEstreno`, `fechaCartele`, `Fechafincartelera`, `URLposter`, `URLtrailer`
         , `URLweboficial`, `idiomas`, `paisorigen`, `estudioproductor`) 
-        VALUES (:TITULO, :DIRECTOR, :SINOPSIS, :DURACION, :ESTRENO, :INICIO, :FIN, :POSTER,:TRAILER, :WEB, :IDIOMAS,:PAISORIGEN, :ESTUDIO)");
+        VALUES (:TITULO, :DIRECTOR, :SINOPSIS, :DURACION,:GENERO, :ESTRENO, :INICIO, :FIN, :POSTER,:TRAILER, :WEB, :IDIOMAS,:PAISORIGEN, :ESTUDIO)");
         $query->bindParam("TITULO", $titulo, PDO::PARAM_STR);
         $query->bindParam("DIRECTOR", $Director, PDO::PARAM_STR);
         $query->bindParam("SINOPSIS", $Sinopsis, PDO::PARAM_STR);
         $query->bindParam("DURACION", $Duracion, PDO::PARAM_STR);
+        $query->bindParam("GENERO", $genero, PDO::PARAM_STR);
         $query->bindParam("ESTRENO", $estreno, PDO::PARAM_STR);
         $query->bindParam("INICIO", $inicio, PDO::PARAM_STR);
         $query->bindParam("FIN", $salida, PDO::PARAM_STR);
@@ -51,9 +52,9 @@ if (isset($_POST['register'])) {
  
         if ($result) {
             
-          //header('Location:Login.php?res=1');
+          header('Location:Login.php?res=1');
         } else {
-            //header('Location:signin.php?res=2');
+            header('Location:signin.php?res=2');
         }
     }
 }else{

@@ -12,9 +12,10 @@ if (isset($_POST['register'])) {
     $Direccion = $_POST['Direccion'];
     $fnacimiento =  date("Y/m/d", strtotime($_POST['fnacimiento']));
     $numero = $_POST['numero'];
-    $password_hash = password_hash($password, PASSWORD_BCRYPT);
- 
-    $query = $connection->prepare("SELECT * FROM usuario WHERE correo=:email");
+    $usuario = $_POST['usuario'];
+    //$password_hash = password_hash($password, PASSWORD_BCRYPT);
+    $password_hash=$password;
+    $query = $connection->prepare("SELECT * FROM persona WHERE correo_per=:email");
     $query->bindParam("email", $email, PDO::PARAM_STR);
     $query->execute();
  
@@ -22,9 +23,15 @@ if (isset($_POST['register'])) {
         header('Location:signin.php?res=0');
     }
  
-    if ($query->rowCount() == 0) {
+    $query2 = $connection->prepare("SELECT * FROM usuario WHERE us=:USUARIO");
+    $query2->bindParam("USUARIO", $usuario, PDO::PARAM_STR);
+    $query2->execute();
+    if ($query->rowCount() > 0) {
+        header('Location:signin.php?res=3');
+    }
+    if ($query->rowCount() == 0 && $query2->rowCount() == 0) {
         $query = $connection->prepare("CALL RegistrarCliente(:NOMBRE,:PATERNO,:MATERNO,
-        :DIRECCION,:NACIMIENTO,:CELULAR,:CORREO,:PASSWORD)");
+        :DIRECCION,:NACIMIENTO,:CELULAR,:CORREO,:PASSWORD,:USUARIO)");
         $query->bindParam("NOMBRE", $nombre, PDO::PARAM_STR);
         $query->bindParam("PATERNO", $paterno, PDO::PARAM_STR);
         $query->bindParam("MATERNO", $materno, PDO::PARAM_STR);
@@ -33,6 +40,7 @@ if (isset($_POST['register'])) {
         $query->bindParam("DIRECCION", $Direccion, PDO::PARAM_STR);
         $query->bindParam("NACIMIENTO", $fnacimiento, PDO::PARAM_STR);
         $query->bindParam("CELULAR", $numero, PDO::PARAM_STR);
+        $query->bindParam("USUARIO", $usuario, PDO::PARAM_STR);
         $result = $query->execute();
  
         if ($result) {

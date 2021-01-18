@@ -1,0 +1,12 @@
+drop procedure if exists RegistrarCliente;
+delimiter //
+create procedure RegistrarCliente(nom_per varchar(45),apepa_per varchar(45),apema_per varchar(45)
+,dierccion_per text(60),fechaNac_per date, phone_per varchar(11), correo varchar(50),pass varchar(50),us varchar(10) )
+ begin
+ INSERT INTO `persona` (`nom_per`, `apepa_per`, `apema_per`, `correo_per`, `dierccion_per`, `fechaNac_per`, `phone_per`)
+ VALUES (nom_per, apepa_per, apema_per, correo, dierccion_per, fechaNac_per, phone_per);
+set @per =(select max(id_per)from persona where id_per= id_per and apepa_per=apepa_per
+ and apema_per=apema_per and correo_per=correo_per and dierccion_per=dierccion_per and fechaNac_per=fechaNac_per and phone_per=phone_per);
+ INSERT INTO `usuario` (`us`, `pass`, `tipo_usu`, `id_per`) VALUES (us, pass,'CLIENTE',@per);
+ end //
+ delimiter ;

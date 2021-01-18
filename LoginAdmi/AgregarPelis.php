@@ -39,7 +39,11 @@
   </div>
   <div class="form-group">
     <label for="inputDuracion" style="color: white;">Duracion</label>
-    <input type="number" class="form-control" name="duracion" required>
+    <input type="text" class="form-control" name="duracion" placeholder="Duracion" required>
+  </div>
+  <div class="form-group">
+    <label for="inputDuracion" style="color: white;">Genero</label>
+    <input type="text" class="form-control" placeholder="Genero" name="genero" required>
   </div>
   <div class="form-group">
     <label for="inputEstreno" style="color: white;">Fecha de Estreno</label>

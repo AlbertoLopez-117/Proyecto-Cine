@@ -46,6 +46,10 @@
                 <input type="email" class="form-control" name="email" placeholder="email" required>
             </div>
             <div class="form-group">
+                <label for="inputSinopsis" style="color: white;">Nombre de usuario</label>
+                <input type="text" class="form-control" name="usuario" placeholder="Usuario" required>
+            </div>
+            <div class="form-group">
                 <label for="inputDuracion" style="color: white;">Contraseña</label>
                 <input type="password" class="form-control" name="password" required>
             </div>
@@ -83,6 +87,15 @@ if (isset($_GET["res"]) && $_GET["res"]==0) {
 if (isset($_GET["res"]) && $_GET["res"]==2) {
     echo ('<div class="form-group"> <div class="alert alert-danger alert-dismissible fade show" role="alert">
     <strong>SE PRODUJO UN ERROR!</strong>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  </div>');
+}
+if (isset($_GET["res"]) && $_GET["res"]==3) {
+    echo ('<div class="form-group"> <div class="alert alert-danger alert-dismissible fade show" role="alert">
+    <strong>EL NOMBRE DE USUARIO INGRESADO YA EXISTE!</strong>
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
       <span aria-hidden="true">&times;</span>
     </button>
